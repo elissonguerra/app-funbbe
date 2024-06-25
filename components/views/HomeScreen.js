@@ -19,7 +19,6 @@ export default function HomeScreen(props) {
             height: 200,
             width: 200,
             display: "flex",
-            backgroundColor: "black",
           }}
           source={{
             uri: 'https://png.pngtree.com/png-clipart/20240218/original/pngtree-3d-kids-go-to-school-vector-transparent-background-png-image_14353716.png',
@@ -30,7 +29,7 @@ export default function HomeScreen(props) {
 
       <Text style={estilos.titulo}>A MELHOR ESCOLA</Text>
 
-      <Text>A Escolas Integradas ”Prof. Nivaldo Salch Stipp” é mantida pela FunBBE (Fundação Barra Bonita de Ensino), e tem sua sede na cidade de Barra Bonita, no interior do estado de São Paulo. Fundada em 1963, era conhecida como Colégio Comercial de Barra Bonita, não possuindo ainda uma estrutura bem definida. Somente em 1966 surge como personalidade jurídica, adequando-se à Lei 493 do ano em vigência, sancionada pelo então prefeito da época, Dr. Clodoaldo Antonângelo. Passa então a dispor sobre a criação da Fundação Barra Bonita de Ensino, ou como é popularmente conhecida, FunBBE, que passa a ser a instituição mantenedora do Colégio Comercial e dos demais cursos implementados por ela.</Text>
+      <View><Text style={estilos.corpo}>A Escolas Integradas ”Prof. Nivaldo Salch Stipp” é mantida pela FunBBE (Fundação Barra Bonita de Ensino), e tem sua sede na cidade de Barra Bonita, no interior do estado de São Paulo. Fundada em 1963, era conhecida como Colégio Comercial de Barra Bonita, não possuindo ainda uma estrutura bem definida. Somente em 1966 surge como personalidade jurídica, adequando-se à Lei 493 do ano em vigência, sancionada pelo então prefeito da época, Dr. Clodoaldo Antonângelo. Passa então a dispor sobre a criação da Fundação Barra Bonita de Ensino, ou como é popularmente conhecida, FunBBE, que passa a ser a instituição mantenedora do Colégio Comercial e dos demais cursos implementados por ela.</Text></View>
     </View>
   );
 }
@@ -46,6 +45,13 @@ const estilos = StyleSheet.create({
     fontSize: 23,
     display: "flex",
     textAlign: "center",
-    padding: 10
+    padding: 20
+  },
+  corpo: {
+    display: "flex",
+    textAlign: "justify",
+    padding: 15,
+    fontSize: 15
   }
+
 })

@@ -2,26 +2,26 @@ import { Image, StyleSheet, Text, View } from "react-native";
 
 export default function ContatoScreen(props) {
     return (
-        <View style={{ flex: 1, paddingTop: 10, paddingLeft: 10 }}>
+        <View style={{ flex: 1, paddingTop: 10, paddingLeft: 10, paddingBottom: 50 }}>
             <Text style={estilos.titulo}>CONTATO</Text>
             <Text style={estilos.titulo}>FALE CONOSCO</Text>
             <Text>contato@funbbe.br</Text>
             <Text>(14) 3641-2100</Text>
             <Text>(14) 3641-9711</Text>
-            <Text style={estilos.titulo}>LOCALIZAÇÃO</Text>
-            <Text>Rua João Gerin, Nº 275 – Vila Operária Barra Bonita | 17340-190 | São Paulo, Brasil.</Text>
+            <View style= {estilos.titulo}><Text>LOCALIZAÇÃO</Text></View>
+            <View style= {estilos.corpo}><Text>Rua João Gerin, Nº 275 – Vila Operária Barra Bonita | 17340-190 | São Paulo, Brasil.</Text></View>
         </View>
     );
 }
 
 const estilos = StyleSheet.create({
-        titulo: {
+    titulo: {
         fontWeight: "bold",
         fontSize: 23,
         display: "flex",
         backgroundColor: "gray",
         textAlign: "center",
-        
+
     },
     subtitulo: {
         fontWeight: "bold",

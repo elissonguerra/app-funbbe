@@ -6,7 +6,7 @@ export default function EquipeScreen(props) {
             <Text style={estilos.titulo}>EQUIPE</Text>
             <Text style={estilos.titulo}>CONHEÇA NOSSA EQUIPE</Text>
 
-            <Text>
+            <Text style={estilos.corpo}>
                 Bem-vindo à nossa equipe, onde a paixão pelo que fazemos se reflete em cada membro que a compõe. Nós somos um grupo diversificado de profissionais dedicados, unidos pela missão de oferecer a melhor experiência possível aos nossos usuários.
                 Nossa Missão: Trabalhamos incansavelmente para criar conteúdos e serviços que inspiram, informam e fazem a diferença na vida de nossos visitantes. Nosso compromisso com a excelência e a inovação nos impulsiona todos os dias.
                 Quem Somos: Desde especialistas técnicos a criativos visionários, nossa equipe é formada por indivíduos talentosos com habilidades diversas. Valorizamos a colaboração, a criatividade e o pensamento crítico, garantindo que cada projeto seja uma representação autêntica de nossos valores e visão.
@@ -31,5 +31,9 @@ const estilos = StyleSheet.create({
         display: "flex",
         justifyContent: "center",
         alignItems: "center"
+    },
+    corpo: {
+        textAlign: "justify",
+        padding: 15
     }
 })
