@@ -28,6 +28,7 @@ const estilos = StyleSheet.create({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        textAlign: "center"
     },
     corpo: {
         padding: 15,

@@ -30,10 +30,11 @@ const estilos = StyleSheet.create({
         fontSize: 23,
         display: "flex",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        textAlign: "center"
     },
     corpo: {
         textAlign: "justify",
-        padding: 15
+        padding: 15,
     }
 })

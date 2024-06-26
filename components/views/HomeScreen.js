@@ -3,12 +3,12 @@ import { Image, StyleSheet, Text, View } from "react-native";
 export default function HomeScreen(props) {
   return (
     <View style={estilos.container}>
-      <Image
-        style={{ height: 50, width: 100 }}
+      <View style={{backgroundColor: "blue", width: "100%", alignItems: "center"}}><Image
+        style={{ height: 50, width: 100}}
         source={{
           uri: 'https://funbbe.br/wp-content/uploads/2023/01/Sem-nome-1920-%C3%97-900-px-5.png',
         }}
-      />
+      /></View>
       <Text style={estilos.titulo}>SEJA BEM-VINDO A FUNBBE!</Text>
 
 
@@ -39,6 +39,8 @@ const estilos = StyleSheet.create({
     flex: 1,
     paddingTop: 10,
     paddingLeft: 10,
+    alignItems: "center",
+    paddingRight: 10
   },
   titulo: {
     fontWeight: "bold",
